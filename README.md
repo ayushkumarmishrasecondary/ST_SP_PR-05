@@ -7,10 +7,6 @@ EXAMPLE :
 C++ Code :
 
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-
 vector<int> stockSpanProblem(int arr[], int n)
 {
     vector<int> v;
@@ -38,16 +34,4 @@ vector<int> stockSpanProblem(int arr[], int n)
     for (int i = 0; i < v.size(); i++)
         v[i] = i - v[i];
     return v;
-}
-
-int main()
-{
-    int arr[] = {100,80,60,70,60,75,85};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    vector<int> v;
-   v = stockSpanProblem(arr, n);
-   for (int i = 0; i < v.size();i++)
-       cout << v[i] << " ";
-   cout << endl;
-   return 0;
 }
