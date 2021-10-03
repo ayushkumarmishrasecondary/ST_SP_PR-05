@@ -11,8 +11,6 @@ C++ Code :
 #include<bits/stdc++.h>
 using namespace std;
 
-
-
 vector<int> stockSpanProblem(int arr[], int n)
 {
     vector<int> v;
